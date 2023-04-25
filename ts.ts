@@ -4,7 +4,7 @@ function getProperty<T, K extends keyof T>(obj: T, key: K): T[K] {
 
 let xn = { a: 1, b: 2, c: 3, d: 4 };
 
-getProperty(xn, 'a'); // okay
+getProperty(xn, 'a'); // ok
 // getProperty(x, 'm'); // error: Argument of type 'm' isn't assignable to 'a' | 'b' | 'c' | 'd'.
 console.log('1' + 2);
 
